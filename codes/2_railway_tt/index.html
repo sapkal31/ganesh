@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Railway Time Table</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(121,58,9,1) 44%, rgb(176, 68, 183) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+  }
+
+
+  table tbody tr:hover {
+    background-color: #cce5ff;
+  }
+
+  table {
+    width: 500px;
+    height: 500px;
+    margin-top: 20px;
+    border-collapse: collapse;
+    background-color: white;
+  }
+
+  th, td ,tr{
+    border: 1px solid #0f0e0e;
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    background-color: #4f4343;
+    color: white;
+  }
+</style>
+</head>
+
+<body>
+<div class="container">
+  <h1>Railway Time Table</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Train No.</th>
+        <th>Train Name</th>
+        <th>Origin City</th>
+        <th>Destination City</th>
+        <th>Departure Time</th>
+        <th>Arrival Time</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>12345</td>
+        <td>Gatimaan Express</td>
+        <td>Mumbai </td>
+        <td>Pune</td>
+        <td>08:00 AM</td>
+        <td>10:00 AM</td>
+      </tr>
+      <tr>
+        <td>54321</td>
+        <td>Rajdhani Express</td>
+        <td>Jaipur</td>
+        <td>Delhi</td>
+        <td>11:00 AM</td>
+        <td>12:25 PM</td>
+      </tr>
+      <tr>
+        <td>98765</td>
+        <td>Jan Shatabdi Express</td>
+        <td>Gujrat</td>
+        <td>Mumbai</td>
+        <td>02:00 PM</td>
+        <td>03:00 PM</td>
+      </tr>
+      <tr>
+        <td>24680</td>
+        <td>Shatabdi Express</td>
+        <td>Mumbai</td>
+        <td>Nashik</td>
+        <td>05:00 PM</td>
+        <td>07:30 PM</td>
+      </tr>
+
+      <tr>
+        <td>48689</td>
+        <td>Deccan Queen</td>
+        <td>Mumbai</td>
+        <td>Delhi</td>
+        <td>06:00 PM</td>
+        <td>08:20 PM</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+</body>
+</html>

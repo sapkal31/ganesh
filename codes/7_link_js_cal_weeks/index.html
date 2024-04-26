@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Example</title>
+</head>
+<body>
+<h1>JavaScript Example</h1>
+<p id="output"></p>
+<button onclick="showResults()">Show Results</button>
+
+<script>
+    function showResults() {
+        // Calculate the average number of weeks in a human lifetime
+        var averageLifespanYears = 72;
+        var weeksInYear = 52;
+        var averageWeeksInLifetime = averageLifespanYears * weeksInYear;
+    
+        // Create a string message
+        var greeting = "Hello";
+        var name = "John";
+        var message = greeting + ", " + name + "!";
+    
+        // Determine the time of day
+        var timeOfDay;
+        var hour = new Date().getHours();
+        if (hour < 12) {
+            timeOfDay = "morning";
+        } else if (hour < 18) {
+            timeOfDay = "afternoon";
+        } else {
+            timeOfDay = "night";
+        }
+    
+        // Display the results on the screen
+        var outputElement = document.getElementById("output");
+        outputElement.innerHTML = "Average weeks in a human lifetime: " + averageWeeksInLifetime + "<br>";
+        outputElement.innerHTML += "Message: " + message + "<br>";
+        outputElement.innerHTML += "Time of day: " + timeOfDay;
+    
+        // Show an alert message
+        var alertMessage = "Results calculated! Check the screen for details.";
+        alert(alertMessage);
+    }
+    
+</script>
+</body>
+</html>
